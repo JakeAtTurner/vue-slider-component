@@ -3,7 +3,6 @@ import { Value, Styles, Position, TooltipProp, TooltipFormatter } from './typing
 
 import './styles/dot.scss'
 import { Options, Vue } from 'vue-class-component'
-import { Slot } from 'vue'
 
 @Options({
   name: 'VueSliderDot',
@@ -40,10 +39,10 @@ export default class VueSliderDot extends Vue {
   disabled!: boolean
 
   @Prop(Object)
-  dotSlot!: Slot
+  dotSlot!: object
 
   @Prop(Object)
-  tooltipSlot!: Slot
+  tooltipSlot!: object
 
   get dotClasses() {
     return [

@@ -3,7 +3,6 @@ import { Mark, Styles } from './typings'
 
 import './styles/mark.scss'
 import { Options, Vue } from 'vue-class-component'
-import { Slot } from 'vue'
 
 @Options({
   name: 'VueSliderMark',
@@ -24,10 +23,10 @@ export default class VueSlideMark extends Vue {
   @Prop() labelActiveStyle?: Styles
 
   @Prop(Object)
-  stepSlot!: Slot
+  stepSlot!: object
 
   @Prop(Object)
-  labelSlot!: Slot
+  labelSlot!: object
 
   get marksClasses() {
     return [

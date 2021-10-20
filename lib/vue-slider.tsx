@@ -38,11 +38,6 @@ const DEFAULT_SLIDER_SIZE = 4
 @Options({
   name: 'VueSlider',
   emits: ['change', 'drag-start', 'dragging', 'drag-end', 'error', 'update:modelValue'],
-  data() {
-    return {
-      control: null,
-    }
-  },
   components: {
     VueSliderDot,
     VueSliderMark,
